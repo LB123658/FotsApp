@@ -42,14 +42,14 @@ width: 60px;
 font-size: 35px;
 color: white;
 }
-#loading {
+#text {
 color: #dc1b1b;
 text-align: center;
 font-size: 20px;
 position: absolute;
-top: 300px;
-left: 0px;
-width: 100%;
+top: 100px;
+left: 5%;
+width: 90%;
 }
 #bottom {
 position: fixed;
@@ -81,26 +81,45 @@ width: 33.3%;
 font-size: 35px;
 color: white;
 }
+#set {
+height: 60px;
+position: absolute;
+bottom: 0px;
+left: 66.6%;
+background: transparent;
+border: none;
+width: 33.3%;
+font-size: 35px;
+color: white;
+}
 </style>
 </head>
 <body>
 
 <div id="top">
 <button id="homeButton" onmousedown="homeHover()" onclick="location.reload()">FOTS</button>
-<button id="notify" onclick="notify()" onmousedown="down()" onmouseup="up()"><span class="material-icons">
+<a href="notifications.html">
+<button id="notify" onmousedown="down()" onmouseup="up()"><span class="material-icons">
 notifications
-</span></button>
-<p id="loading">Loading FotsApp...</p>
+</span></button></a>
+<p id="text"><b>Food + Shots = Fots</b><br><br>FotsApp is the best place to get Fot recipies and more.<br><br><b>Fot Phrase of the day:</b><br>Excuse me, I fotted.<br><br><b>Available Fots include:</b><br>Rispe Fot<br>Meat Fot<br>Olive Fot<br>Chocolate Fot<br><br><br><b>FOT IT!</b></p>
 </div>
 
+<a href="index.html">
 <div id="bottom">
 <button id="home" onmousedown="downHome()" onmouseup="upHome()"><span class="material-icons">
 home
-</span></button>
+</span></button></a>
 
+<a href="bookmarks.html">
 <button id="mark" onmousedown="downMark()" onmouseup="upMark()"><span class="material-icons">
 bookmark
-</span></button>
+</span></button></a>
+
+<a href="settings.html">
+<button id="set" onmousedown="downSet()" onmouseup="upSet()"><span class="material-icons">
+settings
+</span></button></a>
 </div>
 <script>
 function homeHover() {
@@ -111,9 +130,6 @@ document.getElementById("notify").style.background = "#d64b4b";
 }
 function up() {
 document.getElementById("notify").style.background = "#dc1b1b";
-}
-function notify() {
-alert("Welcome to FotsApp! Contact Fots at fotsofficial671@gmail.com");
 }
 function downHome() {
 document.getElementById("home").style.background = "#d64b4b";
@@ -126,6 +142,12 @@ document.getElementById("mark").style.background = "#d64b4b";
 }
 function upMark() {
 document.getElementById("mark").style.background = "#dc1b1b";
+}
+function downSet() {
+document.getElementById("set").style.background = "#d64b4b";
+}
+function upSet() {
+document.getElementById("set").style.background = "#dc1b1b";
 }
 </script>
 </body>
