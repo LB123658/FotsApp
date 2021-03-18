@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FotsApp | notifications</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<style>
+#top {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 60px;
+background: #dc1b1b;
+}
+* {
+font-family: 'Ubuntu', sans-serif;
+user-select: none;
+}
+#homeButton {
+height: 60px;
+position: absolute;
+top: 0px;
+left: 0px;
+background: transparent;
+border: none;
+width: 130px;
+font-size: 35px;
+color: white;
+}
+#notify {
+height: 60px;
+position: absolute;
+top: 0px;
+right: 0px;
+background: transparent;
+border: none;
+width: 60px;
+font-size: 35px;
+color: white;
+}
+
+#bottom {
+position: fixed;
+bottom: 0px;
+left: 0px;
+width: 100%;
+height: 60px;
+background: #dc1b1b;
+}
+#home {
+height: 60px;
+position: absolute;
+bottom: 0px;
+left: 0px;
+background: transparent;
+border: none;
+width: 33.3%;
+font-size: 35px;
+color: white;
+}
+#mark {
+height: 60px;
+position: absolute;
+bottom: 0px;
+left: 33.3%;
+background: transparent;
+border: none;
+width: 33.3%;
+font-size: 35px;
+color: white;
+}
+#set {
+height: 60px;
+position: absolute;
+bottom: 0px;
+left: 66.6%;
+background: transparent;
+border: none;
+width: 33.3%;
+font-size: 35px;
+color: white;
+}
+.option {
+width: 90%;
+height: 35px;
+font-size: 20px;
+border: 2px solid #dc1b1b;
+color: #dc1b1b;
+border-radius: 5px;
+background: white;
+}
+#en {
+position: absolute;
+top: 130px;
+left: 5%;
+}
+#es {
+position: absolute;
+top: 180px;
+left: 5%;
+}
+#olive {
+position: absolute;
+top: 230px;
+left: 5%;
+}
+#choc {
+position: absolute;
+top: 280px;
+left: 5%;
+height: 55px;
+}
+#topLetter {
+position: absolute;
+top: 50px;
+left: 5%;
+width: 90%;
+font-size: 30px;
+color: #dc1b1b;
+text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div id="top">
+<button id="homeButton" onmousedown="homeHover()" onclick="location.reload()">FOTS</button>
+<a href="notifications.html">
+<button id="notify" onmousedown="down()" onmouseup="up()"><span class="material-icons">
+notifications
+</span></button></a>
+<p id="topLetter">Notifications</p>
+<a href="mailto:fotsofficial671@gmail.com">
+<button class="option" id="en">Contact Fots</button></a>
+<a href="https://lb123658.github.io/Fots/" target="_blank">
+<button class="option" id="es">Fots website</button></a>
+<a href="https://sites.google.com/view/fots-/home" target="_blank">
+<button class="option" id="olive">More from Fots</button></a>
+<a href="https://github.com/LB123658/Fots-Virtual-Assistant/archive/main.zip" target="_blank">
+<button class="option" id="choc">Download Fots virtual assistant</button></a>
+
+</div>
+
+<a href="index.html">
+<div id="bottom">
+<button id="home" onmousedown="downHome()" onmouseup="upHome()"><span class="material-icons">
+home
+</span></button></a>
+
+<a href="bookmarks.html">
+<button id="mark" onmousedown="downMark()" onmouseup="upMark()"><span class="material-icons">
+bookmark
+</span></button></a>
+
+<a href="settings.html">
+<button id="set" onmousedown="downSet()" onmouseup="upSet()"><span class="material-icons">
+settings
+</span></button></a>
+</div>
+<script>
+function homeHover() {
+document.getElementById("homeButton").style.background = "#d64b4b";
+}
+function down() {
+document.getElementById("notify").style.background = "#d64b4b";
+}
+function up() {
+document.getElementById("notify").style.background = "#dc1b1b";
+}
+function downHome() {
+document.getElementById("home").style.background = "#d64b4b";
+}
+function upHome() {
+document.getElementById("home").style.background = "#dc1b1b";
+}
+function downMark() {
+document.getElementById("mark").style.background = "#d64b4b";
+}
+function upMark() {
+document.getElementById("mark").style.background = "#dc1b1b";
+}
+function downSet() {
+document.getElementById("set").style.background = "#d64b4b";
+}
+function upSet() {
+document.getElementById("set").style.background = "#dc1b1b";
+}
+</script>
+</body>
+</html>
